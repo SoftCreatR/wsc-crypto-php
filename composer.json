@@ -1,0 +1,41 @@
+{
+  "name": "softcreatr/wsc-crypto-php",
+  "description": "PoC of cryptographic utility functions for WoltLab Suite Core, implemented in PHP.",
+  "license": "ISC",
+  "type": "library",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Sascha Greuel",
+      "email": "hello@1-2.dev"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-mbstring": "*",
+    "paragonie/constant_time_encoding": "^3.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.64",
+    "phpunit/phpunit": ">=10"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "SoftCreatR\\WSCCrypto\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SoftCreatR\\WSCCrypto\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "phpcsf": "php-cs-fixer fix",
+    "test": "phpunit"
+  }
+}
